@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mesto</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <img src="./images/logo.svg" alt="Логотип" class="header__logo">
+  </header>
+
+  <main class="content">
+
+    <section class="profile">
+        <img src="./images/avatar.jpg" alt="Аватар" class="profile__avatar-image">
+      <div class="profile__info-column">
+        <div class="profile__info">
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <button class="profile__edit-button" type="button"></button>
+        </div>
+        <p class="profile__about-me">Исследователь океана</p>
+      </div>
+      <button class="profile__add-button" type="button"></button>
+    </section>
+
+    <section class="elements">
+      <div class="element">
+        <img src="./images/rostov.jpg" alt="Ростов" class="element__image">
+        <div class="element__place">
+          <h2 class="element__title">Ростов</h2>
+          <button class="element__like" type="button"></button>
+        </div>
+      </div>
+
+      <div class="element">
+        <img src="./images/altai.jpg" alt="Алтай" class="element__image">
+        <div class="element__place">
+          <h2 class="element__title">Алтай</h2>
+          <button class="element__like" type="button"></button>
+        </div>
+      </div>
+
+      <div class="element">
+        <img src="./images/kamchatka.jpg" alt="Камчатка" class="element__image">
+        <div class="element__place">
+          <h2 class="element__title">Камчатка</h2>
+          <button class="element__like" type="button"></button>
+        </div>
+      </div>
+
+      <div class="element">
+        <img src="./images/elbrus.jpg" alt="гора Эльбрус" class="element__image">
+        <div class="element__place">
+          <h2 class="element__title">Гора Эльбрус</h2>
+          <button class="element__like" type="button"></button>
+        </div>
+      </div>
+
+      <div class="element">
+        <img src="./images/dombay.jpg" alt="Домбай" class="element__image">
+        <div class="element__place">
+          <h2 class="element__title">Домбай</h2>
+          <button class="element__like" type="button"></button>
+        </div>
+      </div>
+
+      <div class="element">
+        <img src="./images/karachaevo-cherkesk.jpg" alt="Карачаево-Черкесия" class="element__image">
+        <div class="element__place">
+          <h2 class="element__title">Карачаево-Черкесия</h2>
+          <button class="element__like" type="button"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="popup">
+    <div class="popup__container">
+      <button class="popup__close-button" type="button"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="popup__form" name="popup__form">
+          <input type="text" class="popup__form-item popup__form-item_name" name="name" placeholder="Ваше имя">
+          <input type="text" class="popup__form-item popup__form-item_job" name="job" placeholder="О себе">
+          <button class="popup__save-button" type="submit">Сохранить</button>
+        </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
+  </footer>
+
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>
