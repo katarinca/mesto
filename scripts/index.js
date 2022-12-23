@@ -18,7 +18,7 @@ function closePopupWindow () {
   popupWindow.classList.remove('popup_opened');
 }
 
-function handlerSubmit(evt) {
+function handleFormSubmit(evt) {
   evt.preventDefault();
 
   profileName.textContent = nameInput.value;
@@ -28,4 +28,4 @@ function handlerSubmit(evt) {
 
 openPopup.addEventListener('click', openPopupWindow);
 closePopup.addEventListener('click', closePopupWindow);
-popupForm.addEventListener('submit', handlerSubmit);
+popupForm.addEventListener('submit', handleFormSubmit);
