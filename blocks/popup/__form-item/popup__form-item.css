@@ -21,7 +21,8 @@
     width: 100%;
     padding: 0 0 10px;
   }
-}
+
   .popup__form-item:last-of-type {
     margin: 0 auto 45px;
+}
 }
