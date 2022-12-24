@@ -1,12 +1,15 @@
 .profile__about-me {
-  width: 336px;
-  font-family: 'Inter';
+  max-width: 336px;
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
   color: #fff;
   margin: 8px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 767px) {
