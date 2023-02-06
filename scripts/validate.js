@@ -15,7 +15,7 @@ function enableValidation (config) {
   formList.forEach((form) => {
     form.addEventListener('submit', disableSubmit);
     form.addEventListener('input', () => {
-      toggleButtonState(form, config)
+      toggleButtonState(form, config);
     });
     addInputListeners(form, config);
     toggleButtonState(form, config);
@@ -49,7 +49,7 @@ function addInputListeners(form, config) {
 
   inputList.forEach(function (item) {
     item.addEventListener('input', (evt) => {
-      handleFormInput(evt, config)
+      handleFormInput(evt, config);
     });
   });
 }
