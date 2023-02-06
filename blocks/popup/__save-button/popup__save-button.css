@@ -9,6 +9,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
+  margin-top: 18px;
   padding: 0;
   border: none;
 }
@@ -22,5 +23,6 @@
     min-width: 238px;
     min-height: 46px;
     font-size: 14px;
+    margin-top: 15px;
   }
 }
