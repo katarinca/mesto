@@ -9,7 +9,6 @@ const profileName = document.querySelector('.profile__name');
 const profileAboutMe = document.querySelector('.profile__about-me');
 const popupEditButton = document.querySelector('.profile__edit-button');
 const popupCloseEditButton = document.querySelector('.popup__close-button_edit-profile');
-const popupSaveButton = document.querySelector('.popup__save-button');
 
 //попап создания новых карточек
 
@@ -146,7 +145,7 @@ popupFormAdd.addEventListener('submit', handleAddFormSubmit);
 
 popupCloseButtonImage.addEventListener('click', closeBigImage);
 popups.forEach(popup => {
-  popup.addEventListener('click', function (evt){
+  popup.addEventListener('mousedown', function (evt){
     closePopupOverlay(evt, popup);
   });
 })
