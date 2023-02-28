@@ -1,9 +1,9 @@
 export class Card {
-  constructor(data, templateSelector, openPopupBigImage) {
+  constructor(data, templateSelector, handleImageClick) {
     this._name = data.name;
     this._link = data.link;
     this._templateSelector = templateSelector;
-    this._openPopupBigImage = openPopupBigImage;
+    this._handleImageClick = handleImageClick;
   }
 
   //получаем разметку карточек
@@ -45,7 +45,7 @@ export class Card {
     })
 
     this._image.addEventListener('click', () => {
-      this._openPopupBigImage(this._name, this._link)
+      this._handleImageClick(this._name, this._link)
     })
   }
 

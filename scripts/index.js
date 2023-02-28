@@ -27,8 +27,8 @@ const popupCaption = popupContainerImage.querySelector('.popup__caption');
 const popupImage = popupContainerImage.querySelector('.popup__image');
 
 const cardsContainer = document.querySelector('.elements');
-const popupCloseButton = document.querySelectorAll('.popup__close-button');
-popupCloseButton.forEach((button) => {
+const popupCloseButtons = document.querySelectorAll('.popup__close-button');
+popupCloseButtons.forEach((button) => {
   const popup = button.closest('.popup');
   button.addEventListener('click', () => closePopup(popup))
 });
