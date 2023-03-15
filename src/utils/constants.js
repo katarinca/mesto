@@ -33,4 +33,9 @@ const validationConfig = {
   inputErrorClass: 'popup__form-item_type_error',
 };
 
-export {initialCards, validationConfig};
+const nameInput = document.querySelector('.popup__form-item_type_name');
+const jobInput = document.querySelector('.popup__form-item_type_job');
+const popupEditProfile = document.querySelector('.popup_edit-profile')
+const popupAddPlace = document.querySelector('.popup_add-place');
+
+export {initialCards, validationConfig, nameInput, jobInput, popupEditProfile, popupAddPlace};

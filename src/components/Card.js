@@ -6,7 +6,7 @@ export class Card {
     this._handleImageClick = handleImageClick;
   }
 
-  //получаем разметку карточек
+  /**получаем разметку карточек*/
   _getTemplate() {
     const cardElement = document
     .querySelector(this._templateSelector)
@@ -17,7 +17,7 @@ export class Card {
     return cardElement;
   }
 
-  //добавление данных в карточку
+  /**добавление данных в карточку*/
   generateCard() {
     this._element = this._getTemplate();
     
@@ -51,6 +51,7 @@ export class Card {
 
   _handleDeleteCard() {
     this._element.remove();
+    this._element = null;
   }
 
   _handleLikeCard() {
