@@ -16,7 +16,8 @@ import '../pages/index.css';
 const popupEditButton = document.querySelector('.profile__edit-button');
 const popupAddButton = document.querySelector('.profile__add-button');
 
-
+const profileEditValidation = new FormValidator (validationConfig, popupEditProfile);
+const profileAddValidation = new FormValidator (validationConfig, popupAddPlace);
 
 const userInfo = new UserInfo({nameSelector: '.profile__name', jobSelector: '.profile__about-me'});
 
@@ -56,9 +57,6 @@ const popupAddCard = new PopupWithForm(
     }));
   }
 )
-
-const profileEditValidation = new FormValidator (validationConfig, popupEditProfile);
-const profileAddValidation = new FormValidator (validationConfig, popupAddPlace);
 
 popupEditButton.addEventListener('click', () => {
   const userInfoValues = userInfo.getUserInfo();
