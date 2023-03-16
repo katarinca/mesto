@@ -16,12 +16,11 @@ import '../pages/index.css';
 const popupEditButton = document.querySelector('.profile__edit-button');
 const popupAddButton = document.querySelector('.profile__add-button');
 
-const profileEditValidation = new FormValidator (validationConfig, popupEditProfile);
-const profileAddValidation = new FormValidator (validationConfig, popupAddPlace);
 
-const userInfo = new UserInfo({nameSelector: '.profile__name', jobSelector: '.profile__about-me'})
 
-const popupImage = new PopupWithImage('.popup_big-image')
+const userInfo = new UserInfo({nameSelector: '.profile__name', jobSelector: '.profile__about-me'});
+
+const popupImage = new PopupWithImage('.popup_big-image');
 
 function createCard (data) {
   const card = new Card (data, 
@@ -58,14 +57,19 @@ const popupAddCard = new PopupWithForm(
   }
 )
 
+const profileEditValidation = new FormValidator (validationConfig, popupEditProfile);
+const profileAddValidation = new FormValidator (validationConfig, popupAddPlace);
+
 popupEditButton.addEventListener('click', () => {
   const userInfoValues = userInfo.getUserInfo();
   nameInput.value = userInfoValues.name;
   jobInput.value = userInfoValues.job;
+  profileEditValidation.resetValidation();
   popupProfile.open();
 })
 
 popupAddButton.addEventListener('click', () => {
+  profileAddValidation.resetValidation();
   popupAddCard.open();
 })
 

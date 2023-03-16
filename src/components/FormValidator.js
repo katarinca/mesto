@@ -1,5 +1,5 @@
 export class FormValidator {
-  constructor(data, popupForm ) {
+  constructor(data, popupForm) {
   this._inputSelector = data.inputSelector;
   this._submitButtonSelector = data.submitButtonSelector;
   this._inactiveButtonClass = data.inactiveButtonClass;
